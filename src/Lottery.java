@@ -22,8 +22,8 @@ public class Lottery {
 
     public int lotteryGuess(ArrayList<Integer> guess){
         int match = 0;
-        for (int i = 0; i < guess.size(); i++) {
-            if(randomGeneratedNumbers.contains(guess.get(i))){
+        for (Integer integer : guess) {
+            if (randomGeneratedNumbers.contains(integer)) {
                 match++;
             }
         }
